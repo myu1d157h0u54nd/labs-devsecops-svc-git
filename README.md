@@ -148,9 +148,24 @@ https://docs.github.com/es/authentication/managing-commit-signature-verification
 
 ## Claves de coneccion ssh para comunicacion con GitHub:
 
+Ver en local las claves ssh:
+ls ~/.ssh/
 
+Generar claves nuevas:
+ssh-keygen -t ed25519 -C "lastra.nikos@gmail.com" -f ~/.ssh/id_ed25519_?idUser?
+    [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa]
+        https://ed25519.cr.yp.to/
+    [-C comment]
 
+Agregar la llave nueva al agente ssh-agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
 
+Agregar la llave ssh en GitHut
+
+Prueba de coneccion ssh contra GitHub:
+ssh -T git@github.com
+ssh -T -v git@github.com
 
 ## trabajo en el sistema de repocitorio: github
 
