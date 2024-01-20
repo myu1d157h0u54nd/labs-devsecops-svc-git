@@ -15,10 +15,7 @@ sistema de almacenamiento de codigo
 
 ## trabajo local en sus equipo como mantenedores de codigo, git:
 
-herramienta de cli: git
-herramienta grafica:
-  https://www.gitkraken.com/
-    grais para repos publicos
+herramienta de cli: githttps://github.com/Dylan010/labs-devsecops-svc-git
 
 1. ambiente de trabajo:
    /codigo_proyecto/
@@ -178,3 +175,7 @@ requisitos:
       u otras, keeweb (almacen de claves local y en la nube como dropbox u otros datastorage)
     * key-ssh
     * key gpg
+
+## Test fork and pull request
+
+El alumno dylan estuvo aqui 
